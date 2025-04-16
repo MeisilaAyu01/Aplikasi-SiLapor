@@ -81,6 +81,7 @@ Route::middleware(['auth'])->group(function () {
         Route::get('/kirim.notifikasi', [UserController::class, 'kirimNotifikasi'])->name('kirim.notifikasi');
         Route::get('/tanggapan', [TanggapanController::class, 'index'])->name('tanggapan.index');
         Route::get('/tanggapan/{id}', [TanggapanController::class, 'show'])->name('tanggapan.show');
+        Route::delete('/tanggapan/{id}', [TanggapanController::class, 'destroy'])->name('tanggapan.destroy');
     });
 
     Route::middleware(['role:admin'])->group(function () {
