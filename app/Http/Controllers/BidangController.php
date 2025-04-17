@@ -35,9 +35,12 @@ class BidangController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'nama_bidang' => 'required|string|max:255',
+            'nama_bidang' => 'required|unique:bidang,nama_bidang',
+        ], [
+            'nama_bidang.unique' => 'Nama bidang sudah digunakan.',
+            'nama_bidang.required' => 'Nama bidang wajib diisi.',
         ]);
-
+        
         Bidang::create([
             'nama_bidang' => $request->nama_bidang,
         ]);
@@ -69,16 +72,20 @@ class BidangController extends Controller
     public function update(Request $request, $id)
     {
         $request->validate([
-            'nama_bidang' => 'required|string|max:255',
+            'nama_bidang' => 'required|unique:bidang,nama_bidang,' . $id,
+        ], [
+            'nama_bidang.unique' => 'Nama bidang sudah digunakan.',
+            'nama_bidang.required' => 'Nama bidang wajib diisi.',
         ]);
-
+    
         $bidang = Bidang::findOrFail($id);
         $bidang->update([
             'nama_bidang' => $request->nama_bidang,
         ]);
-
+    
         return redirect()->route('bidang.index')->with('success', 'Bidang berhasil diperbarui.');
     }
+    
 
     /**
      * Menghapus bidang dari database.
