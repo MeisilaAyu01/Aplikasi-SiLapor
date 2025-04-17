@@ -142,7 +142,6 @@
         <div class="row gy-4">
           <div class="col-lg-6 position-relative align-self-start" data-aos="fade-up" data-aos-delay="100">
             <img src="assets/img/about.png" class="img-fluid" alt="">
-            <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox pulsating-play-btn"></a>
           </div>
           <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="200" style="position: relative; top: 50px;">
             <h3 class="mb-4">SiLapor adalah sebuah sistem informasi yang dirancang untuk memudahkan sekolah dalam mengelola dan membagikan informasi kegiatan secara digital. Dengan Aplikasi ini, siswa, guru, dan staf sekolah dapat dengan mudah mendokumentasikan serta mengakses berbagai aktivitas sekolah secara terorganisir. Dan juga dapat berinteraksi dengan berbagai aktivitas yang telah berlangsung.</h3>
