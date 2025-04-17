@@ -79,6 +79,7 @@ Route::middleware(['auth'])->group(function () {
         Route::delete('/laporan/{id}', [LaporanController::class, 'destroy'])->name('laporan.destroy');
         Route::resource('bidang', BidangController::class);
         Route::get('/kirim.notifikasi', [UserController::class, 'kirimNotifikasi'])->name('kirim.notifikasi');
+        
         Route::resource('tanggapan', TanggapanController::class);
     });
 
