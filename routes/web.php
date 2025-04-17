@@ -79,9 +79,7 @@ Route::middleware(['auth'])->group(function () {
         Route::delete('/laporan/{id}', [LaporanController::class, 'destroy'])->name('laporan.destroy');
         Route::resource('bidang', BidangController::class);
         Route::get('/kirim.notifikasi', [UserController::class, 'kirimNotifikasi'])->name('kirim.notifikasi');
-        Route::get('/tanggapan', [TanggapanController::class, 'index'])->name('tanggapan.index');
-        Route::get('/tanggapan/{id}', [TanggapanController::class, 'show'])->name('tanggapan.show');
-        Route::delete('/tanggapan/{id}', [TanggapanController::class, 'destroy'])->name('tanggapan.destroy');
+        Route::resource('tanggapan', TanggapanController::class);
     });
 
     Route::middleware(['role:admin'])->group(function () {
