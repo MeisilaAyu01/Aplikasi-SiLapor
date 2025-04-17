@@ -144,7 +144,7 @@
             <img src="assets/img/about.png" class="img-fluid" alt="">
           </div>
           <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="200" style="position: relative; top: 50px;">
-            <h3 class="mb-4">SiLapor adalah sebuah sistem informasi yang dirancang untuk memudahkan sekolah dalam mengelola dan membagikan informasi kegiatan secara digital. Dengan Aplikasi ini, siswa, guru, dan staf sekolah dapat dengan mudah mendokumentasikan serta mengakses berbagai aktivitas sekolah secara terorganisir. Dan juga dapat berinteraksi dengan berbagai aktivitas yang telah berlangsung.</h3>
+            <h3 class="mb-4">SiLapor adalah sebuah sistem informasi yang dirancang untuk memudahkan sekolah dalam mengelola dan membagikan informasi kegiatan secara digital. Dengan Aplikasi ini, sekolah dapat dengan mudah mendokumentasikan serta mengakses berbagai aktivitas sekolah secara terorganisir. Dan juga dapat berinteraksi dengan berbagai aktivitas yang telah berlangsung.</h3>
         </div>        
         
         <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
